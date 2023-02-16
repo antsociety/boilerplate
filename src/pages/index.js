@@ -10,7 +10,7 @@ const HomeWrapper = styled.div`
 export default function Home() {
   const [title, setTitle] = useState('')
 
-  axios.get('http://localhost:1337/api/title').then((response) => {
+  axios.get('https://cms-d9p6.onrender.com/api/title').then((response) => {
     setTitle(response.data.data.attributes.Title)
   })
 
