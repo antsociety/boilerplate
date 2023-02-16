@@ -34,8 +34,4 @@ export default createGlobalStyle`
   #root, #__next {
     isolation: isolate;
   }
-
-  h1 {
-    color: blue;
-  }
 `
