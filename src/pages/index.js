@@ -10,9 +10,11 @@ const HomeWrapper = styled.div`
 export default function Home() {
   const [title, setTitle] = useState('')
 
-  axios.get('https://cms-d9p6.onrender.com/api/title').then((response) => {
-    setTitle(response.data.data.attributes.Title)
-  })
+  axios
+    .get('https://boilerplate-production-5ad4.up.railway.app/api/title')
+    .then((response) => {
+      setTitle(response.data.data.attributes.Title)
+    })
 
   return (
     <>
